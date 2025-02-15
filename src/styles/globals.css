@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .btn-primary {
+    @apply rounded-[15px] px-[15px] py-[10px] bg-primary;
+  }
+  .btn-outline {
+    @apply rounded-[15px] px-[15px] py-[10px] bg-[#1C2620] text-primary border border-primary;
+  }
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .box-icon {
+    @apply flex flex-none  justify-center w-[57px] h-[57px] items-center bg-[#36C58C]/10 rounded-full;
+  }
+  .section-title {
+    @apply text-[34px] md:text-[42px] font-semibold;
+  }
+  .landing-section-spacer {
+    @apply pt-20 xl:pt-[200px];
+  }
+}
+
+:root {
+  --background: #181719;
+  --foreground: #ffffff;
+  --primary: #36c58c;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Kode Mono", serif;
+}
+
+.border-custom-gradient {
+  background: linear-gradient(
+    to right,
+    #36c58c,
+    #348b6887 52.8%,
+    #15523900 100%
+  );
+}
